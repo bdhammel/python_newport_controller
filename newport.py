@@ -37,6 +37,7 @@ TODO:
             1>3 TP?\r
             1>4 TP?\r
             1>ERRSTR?\r
+        Use http://stackoverflow.com/questions/6357850/how-do-i-run-some-python-code-in-another-process
 """
 
 import usb.core
@@ -59,7 +60,7 @@ class Controller(object):
         >>> controller = Controller(idProduct=0x4000, idVendor=0x104d)
         >>> controller.command('VE?')
         
-        >>> controller.console()
+        >>> controller.start_console()
     """
 
 
@@ -141,7 +142,7 @@ class Controller(object):
         
         Args:
             usb_command (str): Correctly formated command for USB driver
-            got_reply (bool): query the IN endpoint after sending command, to 
+            get_reply (bool): query the IN endpoint after sending command, to 
                 get controller's reply
 
         Returns:
