@@ -44,7 +44,7 @@ import usb.core
 import usb.util
 import re
 
-NEWFOCUS_COMMAND_REGEX = re.compile("([0-9]{0,1})([a-zA-Z?]{2,})([0-9+]*)")
+NEWFOCUS_COMMAND_REGEX = re.compile("([0-9]{0,1})([a-zA-Z?]{2,})([0-9+-]*)")
 MOTOR_TYPE = {
         "0":"No motor connected",
         "1":"Motor Unknown",
@@ -270,8 +270,8 @@ if __name__ == '__main__':
     print('#'*80)
     print('\n')
 
-    idProduct = None #'0x4000'
-    idVendor = None  #'0x104d'
+    idProduct = None # '0x4000'
+    idVendor = None  # '0x104d'
 
     if not (idProduct or idVendor):
         print('Run the following command in a new terminal window:')
