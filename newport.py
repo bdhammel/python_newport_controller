@@ -1,8 +1,6 @@
 """Python Driver for NewFocus controllers
 
     __author__ = "Ben Hammel"
-    __credits__ = ["Ben Hammel"]
-    __maintainer__ = "Ben Hammel"
     __email__ = "bdhammel@gmail.com"
     __status__ = "Development"
 
