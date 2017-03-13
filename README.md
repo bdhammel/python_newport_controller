@@ -1,4 +1,4 @@
-This post describes how to interface with a NewPort Motion Controller over USB using a Mac. 
+# Interface with a NewPort Motion Controller over USB using Python on a Mac. 
 
 This process uses Python, with the [pyUSB](http://walac.github.io/pyusb/) module and the [libusb-compat](http://www.libusb.org) backend. 
 The script launches a console type interface, which accepts valid NewPort style commands (see bottom of page).  
