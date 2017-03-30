@@ -5,19 +5,20 @@ The script launches a console type interface, which accepts valid NewPort style 
 
 **Note** This script has only been tested with a single [closed-loop Picomotor controller (model 8745)](https://www.newport.com/Closed-Loop-Picomotor-Motion-Controller/1023364/1033/info.aspx).
 
-###Install
+### Install
 
 #### Install [Homebrew](http://brew.sh) and Python
 
 Follow the steps at [this guide](http://docs.python-guide.org/en/latest/starting/install/osx/) for setting up Python and homebrew. You'll need homebrew to install the USB backend, and Python 2.7.x to run my code. 
 
-####Install the USB Backend - libusb
+
+#### Install the USB Backend - libusb
 
 ```bash
 $ brew install libusb-compat
 ```
 
-####Install pyUSB
+#### Install pyUSB
 
 ```bash
 $ pip install pyusb
